@@ -1,4 +1,3 @@
 #！/bin/bash 
-ps -ef | grep ruby se.rb
-echo "fist" $1
-echo "second" $2
+ps_se='ps -ef | grep ruby se.rb'
+echo ps_se
