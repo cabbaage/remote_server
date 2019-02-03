@@ -1,3 +1,4 @@
 #！/bin/bash 
-$res_a ps -ef | grep se.rb
-echo $res_a
+ps -ef | grep ruby se.rb
+echo "fist" $1
+echo "second" $2
