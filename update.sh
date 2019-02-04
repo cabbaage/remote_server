@@ -8,4 +8,8 @@ fi
 echo "se.rb had been killed"
 echo "now pulling upgrade"
 up=$(git pull origin master)
-run=$(ruby se.rb)
+if [$? = 0]
+then
+	echo "upgrade successfully"
+fi
+echo $(ruby se.rb) >> log_se_rb.log 
