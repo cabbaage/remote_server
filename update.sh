@@ -8,7 +8,7 @@ fi
 echo "se.rb had been killed"
 echo "now pulling upgrade"
 up=$(git pull origin master)
-if [$? = 0]
+if [$? == 0]
 then
 	echo "upgrade successfully"
 fi
