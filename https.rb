@@ -1,10 +1,10 @@
+require "thread"
 require "webrick"
 class MyServlet < WEBrick::HTTPServlet::AbstractServlet
   def do_GET(request, response)
     response.status = 200
     response.content_type = "text/plain"
-	res = gets
-    response.body = "#{res}"
+    response.body = "#{Thread.currect} and Time now #{Time.now}"
   end
 end
 
